@@ -15,7 +15,7 @@ export default function Support() {
           minHeight: "10px",
         }}
       >
-        <Image src={Supportimg} alt="" width={1600} height={300} />
+        <Image src={Supportimg} alt="w" width={1800} height={300} />
       </section>
       <section
         style={{
@@ -70,12 +70,12 @@ export default function Support() {
         </div>
       </section>
       <h1
-        style={{ fontSize: "60px", marginLeft: "450px", marginBottom: "40px" }}
+        style={{ fontSize: "60px", marginLeft: "490px", marginBottom: "40px" }}
       >
       Qanday yordam kerak?
       </h1>
 
-      <section style={{ marginLeft: "210px" }}>
+      <section style={{ marginLeft: "240px" }}>
         <div style={{ display: "flex", gap: "60px" }}>
           <div
             id="Chat"

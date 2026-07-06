@@ -5,48 +5,60 @@ import SamsungPen from "../../../images/SamsungPen.png";
 import Iphone17promax from "../../../images/promax17.png";
 import { FaPenAlt } from "react-icons/fa";
 import { MdCameraAlt } from "react-icons/md";
-import { BsCpuFill } from "react-icons/bs";
 import { IoBatteryCharging } from "react-icons/io5";
 import { RiShieldCheckFill } from "react-icons/ri";
 import { HiSparkles } from "react-icons/hi2";
-
+import { FaHouseSignal } from "react-icons/fa6";
 import Ultras26 from "../../../images/Ultras26.png";
+import Gridspen from "../../../images/DisplayGridSpen-removebg-preview.png";
+import GridCamera from "../../../images/DisplayGridCamera-removebg-preview.png";
+import GridAi from "../../../images/DisplayGridAi-removebg-preview.png";
+import GridBattery from "../../../images/DisplayGridBattery-removebg-preview.png";
+import Gridhome from "../../../images/DisplayGridSmartome-removebg-preview.png";
+import GridPrivacy from "../../../images/DisplayGridPrivacy-removebg-preview.png";
 
 const features = [
   {
-    icon: <FaPenAlt size={28} />,
-    title: "Built-in S Pen",
-    description:
-      "Write, draw and take notes naturally with the integrated S Pen.",
+    icon: <FaPenAlt size={50} />,
+    title: "Yengil S Pen",
+    description: "S26'ingiz S pen bilan",
+    description2: "bemalol yozing-chizing",
+    image: Gridspen,
   },
   {
-    icon: <MdCameraAlt size={28} />,
-    title: "200MP Camera",
-    description:
-      "Capture stunning detail with Samsung's advanced camera system.",
+    icon: <MdCameraAlt size={50} />,
+    title: "200 MP Kamera",
+    description: "S26'ning kamerasi",
+    description2: " bilan 4k rasmga oling",
+    image: GridCamera,
   },
   {
-    icon: <HiSparkles size={28} />,
+    icon: <HiSparkles size={50} />,
     title: "Galaxy AI",
-    description:
-      "Smart AI tools help you search, edit, translate and create faster.",
+    description: "Galaxy AI siz uchun",
+    description2: "avtomatik buyruq bajaradi",
+    image: GridAi,
   },
   {
-    icon: <IoBatteryCharging size={28} />,
-    title: "All-day Battery",
-    description:
-      "Stay powered throughout your day with a long-lasting battery.",
+    icon: <IoBatteryCharging size={50} />,
+    title: "24 soat batareya",
+    description: "1 kunga yetarli",
+    description2: "batareyani bemalol ishlating",
+    image: GridBattery,
   },
   {
-    icon: <RiShieldCheckFill size={28} />,
-    title: "Privacy Screen",
-    description: "Keep your content secure with enhanced privacy features.",
+    icon: <RiShieldCheckFill size={50} />,
+    title: "Maxfiy ekran",
+    description: "Telefoningizni ekrani",
+    description2: "faqat sizga ko'rinadi",
+    image: GridPrivacy,
   },
   {
-    icon: <BsCpuFill size={28} />,
-    title: "Snapdragon 8 Elite",
-    description:
-      "Flagship performance for gaming, multitasking and AI workloads.",
+    icon: <FaHouseSignal size={50} />,
+    title: "Ulanish",
+    description: "Tez va barqaror",
+    description2: "Samsung jihozga ulanish",
+    image: Gridhome,
   },
 ];
 
@@ -74,7 +86,8 @@ export default function S26() {
           fontSize: "130px",
           position: "absolute",
           top: "100px",
-          left: "610px",
+          left: "510px",
+          fontWeight:"500"
         }}
       >
         S26 Ultra
@@ -120,10 +133,10 @@ export default function S26() {
                 textAlign: "center",
                 height: "97px",
                 borderRadius: "50px",
-                marginTop: "50px",
+                marginTop: "10px",
                 backgroundColor: "transparent",
                 fontSize: "36px",
-                border: "1px solid white",
+                border: "3px solid black",
               }}
               className="S26hover"
             >
@@ -137,7 +150,6 @@ export default function S26() {
             flexDirection: "column",
             padding: "20px",
             borderRadius: "20px",
-            alignItems: "flex-start",
           }}
         >
           <button
@@ -147,7 +159,6 @@ export default function S26() {
               textAlign: "center",
               height: "97px",
               borderRadius: "50px",
-              marginTop: "50px",
               backgroundColor: "transparent",
               fontSize: "36px",
               border: "1px solid white",
@@ -162,13 +173,13 @@ export default function S26() {
               textAlign: "center",
               height: "97px",
               borderRadius: "50px",
-              marginTop: "50px",
+              marginTop: "20px",
               backgroundColor: "transparent",
               fontSize: "36px",
               border: "1px solid white",
             }}
           >
-            Uzoq batareya hayoti
+            Uzoq batareya hayot
           </button>
           <button
             style={{
@@ -183,7 +194,7 @@ export default function S26() {
               border: "1px solid white",
             }}
           >
-            Premium dizayn
+            ekslusiz dizayn
           </button>
         </div>
       </section>
@@ -193,7 +204,7 @@ export default function S26() {
           style={{
             width: "100%",
             display: "flex",
-            gap: "30px",
+            gap: "20px",
           }}
         >
           <div
@@ -207,7 +218,7 @@ export default function S26() {
               boxShadow:
                 "0 0 30px rgba(49, 179, 255, 0.6), 0 0 60px rgba(23, 186, 250, 0.4), 0 10px 30px rgba(23, 124, 255, 0.3)",
               height: "700px",
-              marginLeft: "15px",
+              marginLeft: "5px",
               marginTop: "30px",
               borderRadius: "70px",
               overflow: "hidden",
@@ -344,7 +355,7 @@ export default function S26() {
 
       <section
         style={{
-          minHeight: "100vh",
+          Height: "100vh",
           background: "#fff",
           padding: "80px 60px",
         }}
@@ -352,19 +363,9 @@ export default function S26() {
         <div
           style={{
             maxWidth: "2200px",
-            margin: "0 auto",
           }}
         >
-          <p
-            style={{
-              textAlign: "center",
-              color: "#4F46E5",
-              fontWeight: "600",
-              marginBottom: "10px",
-            }}
-          >
-            Samsung S26 Ultra
-          </p>
+        
 
           <h1
             style={{
@@ -374,82 +375,93 @@ export default function S26() {
               marginBottom: "15px",
             }}
           >
-            Powerful Features.
-            <br />
-            Built for Real Life.
+            Samsung S26 Xususiyatlari
           </h1>
-
-          <p
-            style={{
-              textAlign: "center",
-              fontSize: "20px",
-              color: "#666",
-              maxWidth: "700px",
-              margin: "0 auto 70px",
-              lineHeight: "1.6",
-            }}
-          >
-            Discover the features that make the Samsung S26 Ultra one of the
-            most powerful smartphones ever created.
-          </p>
 
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(390px, 1fr))",
-              gap: "25px",
+              gridTemplateColumns: "repeat(auto-fit, minmax(420px, 1fr))",
+              gap: "15px",
             }}
           >
             {features.map((feature, index) => (
               <div
                 key={index}
                 style={{
+                  position: "relative",
                   background: "#fff",
-                  border: "1px solid #E8E8E8",
+                  border: "1px solid #ECECEC",
                   borderRadius: "24px",
-                  padding: "35px",
-                  minHeight: "290px",
-                  boxShadow: "rgb(38, 57, 77) 0px 20px 30px -10px",
-                  cursor: "pointer",
+                  minHeight: "220px",
+                  overflow: "hidden",
+                  padding: "28px",
+                  boxShadow: "0 8px 25px rgba(0,0,0,.06)",
                 }}
               >
-                <div style={{display:"flex", gap:"50px"}}>
                 <div
                   style={{
-                    width: "65px",
-                    height: "65px",
-                    borderRadius: "16px",
-                    background: "#EEF2FF",
+                    width: "52%",
                     display: "flex",
-                    marginTop:"0px",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    color: "#4F46E5",
-                    marginBottom: "25px",
+                    flexDirection: "column",
                   }}
                 >
-                  {feature.icon}
+                  <div
+                    style={{
+                      width: "60px",
+                      height: "60px",
+                      borderRadius: "16px",
+                      background: "#EEF2FF",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      color: "#3F46E8",
+                      marginBottom: "22px",
+                      fontSize: "26px",
+                    }}
+                  >
+                    {feature.icon}
+                  </div>
+
+                  <h2
+                    style={{
+                      fontSize: "32px",
+                      fontWeight: "700",
+                      marginBottom: "14px",
+                      color: "#111",
+                    }}
+                  >
+                    {feature.title}
+                  </h2>
+
+                  <p
+                    style={{
+                      fontSize: "18px",
+                      lineHeight: "1.7",
+                      color: "#666",
+                      maxWidth: "260px",
+                    }}
+                  >
+                    {feature.description}
+                    <br />
+                    {feature.description2}
+                  </p>
                 </div>
 
-                <h2
+                <Image
+                  src={feature.image}
+                  alt={feature.title}
+                  width={220}
+                  height={120}
                   style={{
-                    fontSize: "30px",
-                    marginBottom: "15px",
-                    fontWeight: "700",
+                    position: "absolute",
+                    right: "20px",
+                    bottom: "-20px",
+                    width: "200px",
+                    height: "auto",
+                    objectFit: "contain",
                   }}
-                >
-                  {feature.title}
-                </h2>
-            </div>
-                <p
-                  style={{
-                    fontSize: "18px",
-                    color: "#666",
-                    lineHeight: "1.7",
-                  }}
-                >
-                  {feature.description}
-                </p>
+                />
               </div>
             ))}
           </div>
