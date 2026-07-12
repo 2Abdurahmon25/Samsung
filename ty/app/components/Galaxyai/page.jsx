@@ -3,13 +3,70 @@ import Galaxy1 from "../../../images/Galaxyai1.png";
 import { FaDollarSign } from "react-icons/fa";
 import { FaBoltLightning } from "react-icons/fa6";
 import { IoShieldCheckmarkSharp } from "react-icons/io5";
-
+import {
+  FaMagnifyingGlass,
+  FaLanguage,
+  FaNoteSticky,
+  FaWandMagicSparkles,
+} from "react-icons/fa6";
+import GalaxyAIvideo from "../../../Videos/GalaxyAIvideo.mp4"
 export default function Galaxyai() {
+  const featureCardStyle = {
+    width: "270px",
+    height: "340px",
+    borderRadius: "30px",
+    textAlign: "center",
+    padding: "38px 28px",
+    background: "rgba(255,255,255,.88)",
+    backdropFilter: "blur(18px)",
+    border: "1px solid rgba(255,255,255,.8)",
+    boxShadow:
+      "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
+  };
+
+  const featureIconBox = {
+    width: "82px",
+    height: "82px",
+    margin: "0 auto",
+    borderRadius: "20px",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    fontSize: "36px",
+    background: "linear-gradient(135deg,#F0F8FF,#B3D4FF)",
+    color: "#0055FF",
+    boxShadow: "0 15px 30px rgba(0,85,255,.18)",
+  };
+
+  const features = [
+    {
+      icon: <FaWandMagicSparkles />,
+      title: "Photo Assist",
+      desc: "Rasmlaringizni aqlli tahrirlash, obyektlarni olib tashlash va sifatni oshirish imkoniyati.",
+    },
+    {
+      icon: <FaMagnifyingGlass />,
+      title: "Circle to Search",
+      desc: "Ekranida aylana chizing va qiziqqan narsangiz haqida darhol ma'lumot oling.",
+    },
+    {
+      icon: <FaLanguage />,
+      title: "Live Translate",
+      desc: "Qo'ng'iroqlar va suhbatlarda real vaqtda tarjima qiling, tilda to'siq bo'lmasin.",
+    },
+    {
+      icon: <FaNoteSticky />,
+      title: "Note Assist",
+      desc: "Eslatmalaringizni avtomatik tartibga soling, xulosa chiqaring va sarlavha qo'ying.",
+    },
+  ];
+
+  const floatDurations = ["4s", "4.4s", "4.8s", "5.2s"];
   const cardStyle = {
     width: "480px",
     height: "360px",
     borderRadius: "30px",
-    textAlign: "center",
+    textAlign: "center", 
     padding: "40px",
     background: "rgba(255,255,255,.88)",
     backdropFilter: "blur(18px)",
@@ -74,7 +131,7 @@ export default function Galaxyai() {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          height:"100vh",
+          height: "100vh",
           padding: "90px 100px",
           minHeight: "700px",
         }}
@@ -258,57 +315,166 @@ export default function Galaxyai() {
       <section
         style={{
           position: "relative",
-          padding: "120px 100px",
-          textAlign: "center",
+          padding: "110px 60px 120px",
+          overflow: "hidden",
         }}
       >
-        <h2
+        <div
           style={{
+            position: "absolute",
+            width: "700px",
+            height: "700px",
+            borderRadius: "50%",
+            background: "rgba(0,85,255,.18)",
+            filter: "blur(170px)",
+            top: "-200px",
+            left: "50%",
+            transform: "translateX(-50%)",
+          }}
+        />
+
+        <h1
+          className="ga-anim"
+          style={{
+            position: "relative",
             fontSize: "58px",
-            fontWeight: 800,
+            textAlign: "center",
             color: "black",
+            marginBottom: "24px",
             letterSpacing: "-2px",
           }}
         >
-          <span style={{ color: "#0055FF" }}> Galaxy AI</span> haqida
-          savollingiz bormi?
-        </h2>
+          Galaxy AI <span style={{ color: "#0055FF" }}>Imkoniyatlari</span>
+        </h1>
 
         <p
+          className="ga-anim"
           style={{
-            maxWidth: "900px",
-            margin: "30px auto 0",
-            color: "#666",
-            fontSize: "24px",
-            lineHeight: "1.8",
+            position: "relative",
+            textAlign: "center",
+            color: "#555",
+            fontSize: "22px",
+            lineHeight: "1.7",
+            maxWidth: "760px",
+            margin: "0 auto 70px",
+            animationDelay: "0.1s",
           }}
         >
-          Galaxy AI sizning kundalik vazifalaringizni tezlashtiradi, qidiradi,
-          tarjima qiladi, yozadi va yordam beradi. Hammasi telefoningizning
-          o'zida ishlaydi.
+          Galaxy AI ning eng muhim aqlli funksiyalari bilan tanishing — ular
+          har kuni sizga vaqtni tejash va ijodkorlikni oshirishda yordam beradi.
         </p>
 
-        <button
+        <div
           style={{
-            marginTop: "50px",
-            padding: "20px 45px",
-            border: "none",
-            borderRadius: "18px",
-            background: " #0055FF",
-            color: "white",
-            fontSize: "22px",
-            fontWeight: "bold",
-            cursor: "pointer",
-            boxShadow: "0 20px 50px rgba(0,85,255,.35)",
+            position: "relative",
+            display: "flex",
+            justifyContent: "center",
+            gap: "30px",
+            flexWrap: "wrap",
           }}
         >
-          <a
-            href="https://ru.trygalaxy.com/"
-            style={{ color: "white", textDecoration: "none" }}
-          >
-            Bu yerga o'ting
-          </a>
-        </button>
+          {features.map((f, i) => (
+            <div
+              key={f.title}
+              style={{
+                ...featureCardStyle,
+                animationDelay: `${i * 0.12}s`,
+              }}
+            >
+              <div
+                className="ga-float"
+                style={{
+                  height: "100%",
+                  display: "flex",
+                  flexDirection: "column",
+                  animationDuration: floatDurations[i],
+                }}
+              >
+                <div style={featureIconBox}>{f.icon}</div>
+
+                <h2
+                  style={{
+                    fontSize: "30px",
+                    marginTop: "26px",
+                    color: "#0a0a0a",
+                  }}
+                >
+                  {f.title}
+                </h2>
+
+                <p
+                  style={{
+                    marginTop: "16px",
+                    fontSize: "18px",
+                    color: "#555",
+                    lineHeight: "1.6",
+                  }}
+                >
+                  {f.desc}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section
+        style={{
+          position: "relative",
+          padding: "0 60px 90px",
+          textAlign: "center",
+        }}
+      >
+        <h1
+          className="ga-anim"
+          style={{
+            fontSize: "54px",
+            color: "black",
+            marginBottom: "22px",
+            letterSpacing: "-2px",
+          }}
+        >
+          Galaxy AI Rasmlaringizni Qanday{" "}
+          <span style={{ color: "#0055FF" }}>O'zgartirishini Ko'ring</span>
+        </h1>
+
+        <p
+          className="ga-anim"
+          style={{
+            color: "#555",
+            fontSize: "22px",
+            lineHeight: "1.7",
+            maxWidth: "820px",
+            margin: "0 auto 60px",
+            animationDelay: "0.1s",
+          }}
+        >
+          Quyidagi video Galaxy AI ning aqlli tahrirlash imkoniyatlarini —
+          Photo Assist orqali rasmlaringizni qanday mukammallashtirishini
+          namoyish etadi.
+        </p>
+      </section>
+
+      <section
+        style={{
+          position: "relative",
+          height: "100vh",
+          width: "100%",
+          overflow: "hidden",
+        }}
+      >
+        <video
+          controls
+          preload="none"
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            display: "block",
+          }}
+        >
+          <source src={GalaxyAIvideo} type="video/mp4" />
+        </video>
       </section>
     </div>
   );

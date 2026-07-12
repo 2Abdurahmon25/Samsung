@@ -10,6 +10,12 @@ const nextConfig = {
   },
   turbopack: {
     root: __dirname,
+    rules: {
+      // Tells Turbopack how to handle imported MP4 video files
+      '*.mp4': {
+        type: 'asset',
+      },
+    },
   },
 };
 

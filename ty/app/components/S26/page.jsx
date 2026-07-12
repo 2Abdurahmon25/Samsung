@@ -128,7 +128,7 @@ export default function S26() {
           <a href="https://www.samsung.com/us/smartphones/galaxy-s26-ultra/">
             <button
               style={{
-                color: "white",
+                color: "black",
                 width: "290px",
                 textAlign: "center",
                 height: "97px",
@@ -140,7 +140,7 @@ export default function S26() {
               }}
               className="S26hover"
             >
-              Ko'rib chiqish
+              <span style={{color:"white"}}>Ko'r</span>ib chiqish
             </button>
           </a>
         </div>

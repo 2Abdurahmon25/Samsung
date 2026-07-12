@@ -1,17 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap');
 @import "tailwindcss";
 
 :root {
-  --font-inter: "Inter", sans-serif;
+  --font-inter: "Futura PT", "Jost", "Inter", sans-serif;
   --background: #ffffff;
   --foreground: #2d00b3;
   --primary: #a8c7fa;
   --surface: #1e1f22;
   --surface-variant: #2d2f33;
-  cursor: url("https://cur.cursors-4u.net/cursors/cur-9/cur817.cur"), ;
   --border: #444746;
   --samsung-blue: #1428a0;
 }
+
+
 
 .buttonpagejsx {
   background-color: #0D2A3C;
@@ -38,7 +39,7 @@
 }
 
 .Helpbutton {
-  transition: 3s;
+  transition: 1s;
 }
 
 .Help2button:hover {
@@ -50,13 +51,13 @@
 .Help2button {
   background-color: #2d00b3;
   color: white;
-  transition: 3s;
+  transition: 1s;
 }
 
 .btnhovercolor:hover {
   color: black;
   background-color: white;
-  font-size: 25px;
+  font-size: 29px;
 
 }
 
@@ -78,22 +79,4 @@ body {
   color: var(--foreground);
   letter-spacing: 0px;
   font-family: var(--font-inter);
-}
-
-iframe {
-  border: none;
-  background: #ffffff;
-}
-
-button {
-  cursor: pointer;
-  font-family: inherit;
-}
-
-input,
-textarea {
-  font-family: inherit;
-  background: transparent;
-  border: none;
-  outline: none;
 }
