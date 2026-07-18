@@ -12,46 +12,39 @@ import {
 } from "react-icons/fa";
 import { FaBoltLightning } from "react-icons/fa6";
 import { IoShieldCheckmarkSharp } from "react-icons/io5";
+
 import Samsung1 from "../images/SamsungHome.png";
 import Mobile from "../images/SamsungMobile.png";
 import Maish from "../images/SamsungHomeapp.png";
 import Monitor from "../images/SamsungMonitor.png";
 import Hardware from "../images/SamsungHardware.png";
-import S26 from "../images/S26.png";
+import S26 from "../images/S26o17.png";
 import Watch from "../images/Watch8.png";
 import GalaxyAi from "../images/Galaxyai1.png";
-import Buds from "../images/SamsungWatches.png";
-
+import Monitorodeyssey from "../images/Samsungodyssey.png";
+import Samsungbuds from "../images/Samsungbuds.png";
+import Ecosystem from "../images/SamsungEcosystem.png";
+import ecoexample from "../images/SamsungEcosystemexample.png";
 export default function page() {
   const router = useRouter();
-
-  const BLUE = "#1428A0";
-  const DARK = "#0B0B0B";
-  const CARD = "#111827";
-  const CONTAINER = { maxWidth: "1280px", margin: "0 auto", width: "100%" };
-
   const categories = [
     {
       title: "Telefonlar va Aksessuarlar",
-      desc: "Galaxy smartfonlar, soatlar va quloqchinlar birgalikda ishlash uchun yaratilgan.",
       img: Mobile,
       route: "./components/Watches",
     },
     {
       title: "Televizorlar va Monitorlar",
-      desc: "Har bir xona uchun oydin displey va Neo QLED mukammalligi.",
       img: Monitor,
       route: "./components/Monitor",
     },
     {
       title: "Maishiy Texnika",
-      desc: "Kundalik hayotni osonlashtiradigan aqlli muzlatgichlar, kir yuvish va pishirish.",
       img: Maish,
       route: "./components/SmartHome",
     },
     {
       title: "Kompyuter Qurilmalari",
-      desc: "Uzoq muddatga mo'ljallangan yuqori unumli SSD, xotira va komponentlar.",
       img: Hardware,
       route: "./components/Watches",
     },
@@ -65,54 +58,29 @@ export default function page() {
       route: "./components/S26",
     },
     {
-      name: "Galaxy Watch8",
+      name: "Galaxy Watch 8",
       price: "$449",
       img: Watch,
       route: "./components/Watches",
     },
     {
-      name: "Galaxy AI Markazi",
-      price: "$199",
-      img: GalaxyAi,
-      route: "./components/Galaxyai",
+      name: "Odyssey G6",
+      price: "$1000",
+      img: Monitorodeyssey,
+      route: "./components/Monitor",
     },
     {
-      name: "Galaxy Buds Pro",
-      price: "$229",
-      img: Buds,
+      name: "Galaxy Buds Pro 4",
+      price: "$199",
+      img: Samsungbuds,
       route: "./components/Watches",
     },
   ];
 
-  const ecosystem = [
-    { label: "Telefon", img: Mobile },
-    { label: "Soat", img: Watch },
-    { label: "Quloqchin", img: Buds },
-    { label: "Planshet", img: S26 },
-    { label: "TV", img: Monitor },
-    { label: "Aqlli Uy", img: Maish },
-  ];
-
-  const whySamsung = [
-    {
-      title: "Tezlik",
-      desc: "Vazifalarni millisekundlarda bajaradi va juda aniq javob beradi.",
-      icon: <FaBoltLightning />,
-    },
-    {
-      title: "Ishonchli",
-      desc: "Galaxy AI sizdan hech nima hohlamaydi, hech nimani ruxsatingizsiz bajarmaydi",
-      icon: <IoShieldCheckmarkSharp />,
-    },
-    {
-      title: "Bepul",
-      desc: "Galaxy AI Samsung foydalanuvchilari uchun bepul",
-      icon: <FaDollarSign />,
-    },
-  ];
-
   return (
-    <div style={{ background: DARK, color: "#fff", fontFamily: "inherit" }}>
+    <div
+      style={{ background: "#0B0B0B", color: "#fff", fontFamily: "inherit" }}
+    >
       <section
         style={{
           position: "relative",
@@ -124,7 +92,9 @@ export default function page() {
       >
         <div
           style={{
-            ...CONTAINER,
+            maxWidth: "1280px",
+            margin: "0 auto",
+            width: "100%",
             display: "grid",
             gridTemplateColumns: "1fr 1fr",
             gap: "48px",
@@ -133,7 +103,7 @@ export default function page() {
             minHeight: "calc(100vh - 70px)",
           }}
         >
-          <div className="fade-up">
+          <div>
             <h1
               style={{
                 fontSize: "clamp(40px, 6vw, 68px)",
@@ -157,7 +127,7 @@ export default function page() {
               <button
                 onClick={() => router.push("./components/S26")}
                 style={{
-                  background: BLUE,
+                  background: "#1428A0",
                   color: "#fff",
                   border: "none",
                   borderRadius: "999px",
@@ -245,8 +215,8 @@ export default function page() {
         </div>
       </section>
 
-      <section style={{ padding: "96px 24px", background: DARK }}>
-        <div style={{ ...CONTAINER }}>
+      <section style={{ padding: "96px 24px", background: "#0B0B0B" }}>
+        <div style={{ maxWidth: "1280px", margin: "0 auto", width: "100%" }}>
           <h2
             style={{
               fontSize: "clamp(28px, 4vw, 40px)",
@@ -255,7 +225,7 @@ export default function page() {
               textAlign: "center",
             }}
           >
-            Kategoriyalar Bo'yicha
+            Texnologiyalar kategoriyasi
           </h2>
           <p
             style={{
@@ -290,7 +260,7 @@ export default function page() {
                     "0 10px 30px rgba(0,0,0,0.4)";
                 }}
                 style={{
-                  background: CARD,
+                  background: "#111827",
                   borderRadius: "28px",
                   overflow: "hidden",
                   cursor: "pointer",
@@ -300,53 +270,202 @@ export default function page() {
                   transition: "transform 0.3s ease, box-shadow 0.3s ease",
                 }}
               >
-                <div
-                  style={{
-                    position: "relative",
-                    width: "100%",
-                    height: "320px",
-                    background:
-                      "linear-gradient(180deg, rgba(20,40,160,0.12), transparent)",
-                  }}
-                >
+                <div style={{ padding: "50px" }}>
                   <Image
                     src={c.img}
-                    alt={c.title}
-                    fill
-                    style={{ objectFit: "contain", padding: "32px" }}
+                    alt="err"
+                    style={{
+                      objectFit: "contain",
+                      borderRadius: "40%",
+                      position: "relative",
+                      width: "fit-content",
+                      height: "fit-content",
+                      borderRadius: "30px",
+                      border: "1px solid white",
+                    }}
                   />
                 </div>
                 <div style={{ padding: "28px 32px 36px" }}>
-                  <h3 style={{ margin: 0, fontSize: "24px", fontWeight: 700 }}>
-                    {c.title}
-                  </h3>
-                  <p
+                  <h3
                     style={{
-                      margin: "12px 0 0",
-                      color: "rgba(255,255,255,0.6)",
-                      lineHeight: 1.6,
-                      fontSize: "15px",
+                      paddingLeft: "120px",
+                      margin: 0,
+                      fontSize: "24px",
+                      fontWeight: 800,
                     }}
                   >
-                    {c.desc}
-                  </p>
+                    {c.title}
+                  </h3>
                 </div>
               </div>
             ))}
           </div>
         </div>
       </section>
+      <section
+        style={{
+          minHeight: "100vh",
+          background: "#050505",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          padding: "0 8%",
+          gap: "80px",
+          overflow: "hidden",
+        }}
+      >
+        <div
+          style={{
+            flex: "0 0 42%",
+            color: "white",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+          }}
+        >
+          <h1 style={{ fontSize: "50px" }}>
+            Samsung Ecosistemasi <br /> bilan Tanishing
+          </h1>
+          <p
+            style={{
+              fontSize: "21px",
+              lineHeight: "1.8",
+              color: "#CFCFCF",
+              maxWidth: "540px",
+              marginBottom: "50px",
+            }}
+          >
+            Samsung ekotizimi — bu telefon, soat va uy jihozlarining bir-biri
+            bilan avtomatik bogʻlanishidir. Ular fayllarni oson oʻtkazadi,
+            quloqchinni oʻzi ulaydi va maishiy texnikadan bildirishnomalar
+            yuboradi. Maqsad — hamma mayda-chuyda ishlarni texnikaning oʻzi
+            bajarishi va sizga qulay boʻlishidir.
+          </p>
+          <div style={{ marginTop: "10px", display: "flex" }}>
+            <div
+              style={{
+                display: "flex",
+                gap: "18px",
+                marginTop: "1px",
+                alignItems: "center",
+                flexWrap: "wrap",
+              }}
+            >
+              <button
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  gap: "10px",
+                  padding: "14px 28px",
+                  backgroundColor: "#fff",
+                  color: "#000",
+                  border: "1px solid rgba(255,255,255,0.2)",
+                  borderRadius: "999px",
+                  fontSize: "16px",
+                  fontWeight: "600",
+                  cursor: "pointer",
+                  transition: "all 0.35s ease-in-out",
+                  boxShadow: "0 8px 24px rgba(255,255,255,0.08)",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = "#1E88FF";
+                  e.currentTarget.style.color = "#fff";
+                  e.currentTarget.style.transform = "translateY(-3px)";
+                  e.currentTarget.style.boxShadow =
+                    "0 14px 35px rgba(30,136,255,.45)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = "#fff";
+                  e.currentTarget.style.color = "#000";
+                  e.currentTarget.style.transform = "translateY(0)";
+                  e.currentTarget.style.boxShadow =
+                    "0 8px 24px rgba(255,255,255,.08)";
+                }}
+              >
+                Ko'proq Ma'lumot
+              </button>
+              <button
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  gap: "10px",
+                  padding: "14px 28px",
+                  background: "transparent",
+                  color: "#fff",
+                  border: "1px solid rgba(255,255,255,.25)",
+                  borderRadius: "999px",
+                  fontSize: "16px",
+                  fontWeight: "600",
+                  cursor: "pointer",
+                  transition: "all 0.35s ease-in-out",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = "rgba(255,255,255,.08)";
+                  e.currentTarget.style.border = "1px solid #fff";
+                  e.currentTarget.style.transform = "translateY(-3px)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = "transparent";
+                  e.currentTarget.style.border =
+                    "1px solid rgba(255,255,255,.25)";
+                  e.currentTarget.style.transform = "translateY(0)";
+                }}
+              >
+                Ecosystem Ko'rib chiqish →
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          style={{
+            flex: "0 0 58%",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            position: "relative",
+            overflow: "visible",
+          }}
+        >
+          <Image
+            src={Ecosystem}
+            alt="Samsung Ecosystem"
+            style={{
+              width: "100%",
+              maxWidth: "1000px",
+              height: "auto",
+              objectFit: "contain",
+              position: "relative",
+            }}
+          />
+        </div>
+      </section>
+
+      <section
+        style={{
+          border:"1px solid white",
+          height: "100vh",
+          background: "#050505",
+        }}
+      >
+        <h1 style={{fontSize:"40px", marginLeft:"15px", textAlign:"center", marginTop:"20px"}}>
+          Samsung Ecosistem orqali hamma Samsung qurilmalaringiz <br /> bitta Telefon
+          orqali boshqara olasiz
+        </h1>
+      </section>
 
       <section style={{ padding: "96px 24px", background: "#050505" }}>
-        <div style={{ ...CONTAINER }}>
+        <div style={{ maxWidth: "1280px", margin: "0 auto", width: "100%" }}>
           <h2
             style={{
               fontSize: "clamp(28px, 4vw, 40px)",
-              fontWeight: 800,
+              fontWeight: 800,                        
               margin: 0,
             }}
           >
-            Tanlangan Mahsulotlar
+            Eng ko'p sotiladigan texnologiyalarimiz
           </h2>
           <div
             style={{
@@ -370,7 +489,7 @@ export default function page() {
                     "0 10px 30px rgba(0,0,0,0.4)";
                 }}
                 style={{
-                  background: CARD,
+                  background: "#111827",
                   borderRadius: "24px",
                   padding: "24px",
                   cursor: "pointer",
@@ -406,7 +525,7 @@ export default function page() {
                 <p
                   style={{
                     margin: 0,
-                    color: BLUE,
+                    color: "white ",
                     fontWeight: 700,
                     fontSize: "18px",
                   }}
@@ -420,7 +539,7 @@ export default function page() {
                   }}
                   style={{
                     marginTop: "18px",
-                    background: BLUE,
+                    background: "#1428A0",
                     color: "#fff",
                     border: "none",
                     borderRadius: "999px",
@@ -444,92 +563,8 @@ export default function page() {
         </div>
       </section>
 
-      <section style={{ padding: "96px 24px", background: DARK }}>
-        <div style={{ ...CONTAINER, textAlign: "center" }}>
-          <h2
-            style={{
-              fontSize: "clamp(28px, 4vw, 40px)",
-              fontWeight: 800,
-              margin: 0,
-            }}
-          >
-            Samsung Ekotizimlari
-          </h2>
-          <p
-            style={{
-              color: "rgba(255,255,255,0.6)",
-              marginTop: "12px",
-              fontSize: "17px",
-            }}
-          >
-            Sizga tegishli har bir qurilma uchun yagona uzluksiz tajriba.
-          </p>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              marginTop: "48px",
-              gap: "0",
-            }}
-          >
-            {ecosystem.map((item, i) => (
-              <div
-                key={item.label}
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "center",
-                }}
-              >
-                <div
-                  style={{
-                    width: "160px",
-                    height: "160px",
-                    borderRadius: "24px",
-                    background: CARD,
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    boxShadow: "0 10px 30px rgba(0,0,0,0.4)",
-                  }}
-                >
-                  <Image
-                    src={item.img}
-                    alt={item.label}
-                    width={90}
-                    height={90}
-                    style={{ objectFit: "contain" }}
-                  />
-                </div>
-                <span
-                  style={{
-                    marginTop: "14px",
-                    fontWeight: 600,
-                    fontSize: "16px",
-                  }}
-                >
-                  {item.label}
-                </span>
-                {i < ecosystem.length - 1 && (
-                  <div
-                    style={{
-                      width: "2px",
-                      height: "40px",
-                      background:
-                        "linear-gradient(180deg, rgba(20,40,160,0.8), rgba(20,40,160,0.1))",
-                      margin: "10px 0",
-                    }}
-                  />
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section style={{ padding: "96px 24px", background: "#050505" }}>
-        <div style={{ ...CONTAINER }}>
+        <div style={{ maxWidth: "1280px", margin: "0 auto", width: "100%" }}>
           <h2
             style={{
               fontSize: "clamp(28px, 4vw, 40px)",
@@ -538,7 +573,7 @@ export default function page() {
               textAlign: "center",
             }}
           >
-            Nima uchun <span style={{ color: BLUE }}>Samsung?</span>
+            Nima uchun <span style={{ color: "#1428A0" }}>Samsung?</span>
           </h2>
           <p
             style={{
@@ -550,70 +585,181 @@ export default function page() {
           >
             Dunyo bo'ylab yetakchilik va ishonchli natijalar.
           </p>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              gap: "35px",
-              flexWrap: "wrap",
-              marginTop: "48px",
-            }}
-          >
-            {whySamsung.map((item) => (
-              <div
-                key={item.title}
-                style={{
-                  width: "480px",
-                  height: "360px",
-                  borderRadius: "30px",
-                  textAlign: "center",
-                  padding: "40px",
-                  background: "rgba(255,255,255,.88)",
-                  backdropFilter: "blur(18px)",
-                  border: "1px solid rgba(255,255,255,.8)",
-                  boxShadow:
-                    "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
-                }}
-              >
-                <div
-                  style={{
-                    width: "82px",
-                    height: "82px",
-                    margin: "0 auto",
-                    borderRadius: "20px",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    fontSize: "36px",
-                    background: "linear-gradient(135deg,#F0F8FF,#B3D4FF)",
-                    color: "#0055FF",
-                    boxShadow: "0 15px 30px rgba(0,85,255,.18)",
-                  }}
-                >
-                  {item.icon}
-                </div>
-
-                <h2
-                  style={{
-                    fontSize: "42px",
-                    marginTop: "28px",
-                  }}
-                >
-                  {item.title}
-                </h2>
-
-                <p
-                  style={{
-                    marginTop: "18px",
-                    fontSize: "24px",
-                    color: "#555",
-                    lineHeight: "1.7",
-                  }}
-                >
-                  {item.desc}
-                </p>
-              </div>
-            ))}
+          <div>
+            <button
+              style={{
+                fontSize: "30px",
+                padding: "10px",
+                transition: "all 0.3s ease-in-out",
+                height: "100px",
+                marginTop: "10px",
+                width: "fit-content",
+                backgroundColor: "white",
+                color: "black",
+                borderRadius: "30px",
+                marginLeft: "30px",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = "black";
+                e.currentTarget.style.color = "white";
+                e.currentTarget.style.border = "1px solid white";
+                e.currentTarget.style.transform = "scale(1.1)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = "white";
+                e.currentTarget.style.color = "black";
+                e.currentTarget.style.border = "1px solid black";
+                e.currentTarget.style.transform = "scale(1.0)";
+              }}
+            >
+              Samsung global televizor bozorida ketma-ket 20 yildan beri
+              1-oʻrinni hech kimga bermay kelmoqda.
+            </button>
+            <button
+              style={{
+                fontSize: "30px",
+                padding: "10px",
+                height: "100px",
+                marginLeft: "70px",
+                width: "fit-content",
+                marginTop: "10px",
+                transition: "all 0.3s ease-in-out",
+                backgroundColor: "white",
+                color: "black",
+                borderRadius: "30px",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = "black";
+                e.currentTarget.style.color = "white";
+                e.currentTarget.style.border = "1px solid white";
+                e.currentTarget.style.transform = "scale(1.1)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = "white";
+                e.currentTarget.style.color = "black";
+                e.currentTarget.style.border = "1px solid black";
+                e.currentTarget.style.transform = "scale(1.0)";
+              }}
+            >
+              Samsungning qurilmalari telefonlardan tortib muzlatgichlargacha
+              bir-biri bilan ishlay oladi.
+            </button>
+            <button
+              style={{
+                fontSize: "30px",
+                padding: "10px",
+                height: "100px",
+                marginLeft: "150px",
+                width: "fit-content",
+                marginTop: "10px",
+                backgroundColor: "white",
+                color: "black",
+                transition: "all 0.3s ease-in-out",
+                borderRadius: "30px",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = "black";
+                e.currentTarget.style.color = "white";
+                e.currentTarget.style.border = "1px solid white";
+                e.currentTarget.style.transform = "scale(1.1)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = "white";
+                e.currentTarget.style.color = "black";
+                e.currentTarget.style.border = "1px solid black";
+                e.currentTarget.style.transform = "scale(1.0)";
+              }}
+            >
+              1 Milliard 33 million odam Samsungning texnologiyasidan har kuni
+              foydalanadi
+            </button>
+            <button
+              style={{
+                fontSize: "30px",
+                padding: "10px",
+                height: "100px",
+                width: "fit-content",
+                marginTop: "10px",
+                backgroundColor: "white",
+                color: "black",
+                borderRadius: "30px",
+                transition: "all 0.3s ease-in-out",
+                marginLeft: "210px",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = "black";
+                e.currentTarget.style.color = "white";
+                e.currentTarget.style.border = "1px solid white";
+                e.currentTarget.style.transform = "scale(1.1)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = "white";
+                e.currentTarget.style.color = "black";
+                e.currentTarget.style.border = "1px solid black";
+                e.currentTarget.style.transform = "scale(1.0)";
+              }}
+            >
+              94% foydalanuvchilar Samsungning servisidan qoniqish hosil qiladi
+            </button>
+            <button
+              style={{
+                fontSize: "30px",
+                padding: "10px",
+                height: "100px",
+                width: "fit-content",
+                backgroundColor: "white",
+                color: "black",
+                marginTop: "10px",
+                borderRadius: "30px",
+                marginLeft: "280px",
+                transition: "all 0.3s ease-in-out",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = "black";
+                e.currentTarget.style.color = "white";
+                e.currentTarget.style.border = "1px solid white";
+                e.currentTarget.style.transform = "scale(1.1)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = "white";
+                e.currentTarget.style.color = "black";
+                e.currentTarget.style.border = "1px solid black";
+                e.currentTarget.style.transform = "scale(1.0)";
+              }}
+            >
+              400 Milliondan ortiq odam Galaxy AI dan foydalanadi
+            </button>
+            <button
+              style={{
+                fontSize: "30px",
+                padding: "10px",
+                height: "90px",
+                width: "fit-content",
+                backgroundColor: "black",
+                color: "white",
+                marginTop: "10px",
+                borderRadius: "30px",
+                marginLeft: "370px",
+                border: "1px solid white",
+                transition: "all 0.3s ease-in-out",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = "white";
+                e.currentTarget.style.color = "black";
+                e.currentTarget.style.border = "1px solid black";
+                e.currentTarget.style.transform = "scale(1.1)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = "black";
+                e.currentTarget.style.color = "white";
+                e.currentTarget.style.border = "1px solid white";
+                e.currentTarget.style.transform = "scale(1.0)";
+              }}
+            >
+              <a href="https://news.samsung.com/global/fast-facts">
+                Ko'proq Ma'lumot Uchun Bu yerga o'ting
+              </a>
+            </button>
           </div>
         </div>
       </section>
