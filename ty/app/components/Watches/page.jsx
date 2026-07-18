@@ -147,6 +147,7 @@ export default function Watches() {
         }}
       >
         <Image
+          loading="lazy"
           src={Watch_background}
           alt="Sa"
           fill
@@ -374,9 +375,11 @@ export default function Watches() {
                 }}
               >
                 <Image
+                  loading="lazy"
                   src={WatchUltra}
                   alt="Galaxy Watch Ultra"
                   fill
+                  sizes="260px"
                   style={{
                     objectFit: "contain",
                     padding: "10px",
@@ -549,9 +552,11 @@ export default function Watches() {
                 }}
               >
                 <Image
+                  loading="lazy"
                   src={Watch8classic}
                   alt="Galaxy Watch 8 Classic"
                   fill
+                  sizes="260px"
                   style={{
                     objectFit: "contain",
                     padding: "10px",
@@ -725,9 +730,11 @@ export default function Watches() {
                 }}
               >
                 <Image
+                  loading="lazy"
                   src={Watch8}
                   alt="Galaxy Watch 8"
                   fill
+                  sizes="260px"
                   style={{
                     objectFit: "contain",
                     padding: "10px",
@@ -900,9 +907,11 @@ export default function Watches() {
                 }}
               >
                 <Image
+                  loading="lazy"
                   src={Watch7}
                   alt="Galaxy Watch 7"
-                  fill
+                  fizes="260px"
+                  sill
                   style={{
                     objectFit: "contain",
                     padding: "10px",
@@ -1038,9 +1047,11 @@ export default function Watches() {
                 }}
               >
                 <Image
+                  loading="lazy"
                   src={s.image}
                   alt="gej"
-                  fill
+                  fizes="210px"
+                  sill
                   style={{ objectFit: "contain" }}
                 />
               </div>
@@ -1232,9 +1243,11 @@ export default function Watches() {
                     }}
                   >
                     <Image
+                      loading="lazy"
                       src={r.image}
                       alt='p'
-                      fill
+                      fizes="(max-width: 768px) 100vw, 400px"
+                      sill
                       style={{ objectFit: "contain", padding: "14px" }}
                     />
                   </div>

@@ -74,8 +74,7 @@ export default function S26() {
   return (
     <div>
       <section style={{ position: "relative" }}>
-        <Image
-          src={Backgroundc}
+        <Image          loading="lazy"          src={Backgroundc}
           alt="Samsung Galaxy S26 Ultra dark background"
         />
       </section>
@@ -258,8 +257,7 @@ export default function S26() {
             <h1 style={{ ...specRowStyle, textAlign: "left" }}>
               maxfiylik ekran
             </h1>
-            <Image
-              src={Ultras26}
+            <Image              loading="lazy"              src={Ultras26}
               alt="S"
               style={{
                 position: "absolute",
@@ -337,8 +335,7 @@ export default function S26() {
             <h1 style={{ ...specRowStyle, textAlign: "left" }}>
               maxfiylik ekran yo'q
             </h1>
-            <Image
-              src={Iphone17promax}
+            <Image              loading="lazy"              src={Iphone17promax}
               alt="za"
               style={{
                 position: "absolute",
@@ -448,8 +445,7 @@ export default function S26() {
                   </p>
                 </div>
 
-                <Image
-                  src={feature.image}
+                <Image                  loading="lazy"                  src={feature.image}
                   alt={feature.title}
                   width={220}
                   height={120}

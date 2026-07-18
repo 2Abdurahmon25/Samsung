@@ -69,7 +69,13 @@ export default function Support() {
           minHeight: "10px",
         }}
       >
-        <Image src={Supportimg} alt="w" width={1800} height={300} />
+        <Image
+          loading="lazy"
+          src={Supportimg}
+          alt="w"
+          width={1800}
+          height={300}
+        />
       </section>
       <section
         style={{
@@ -87,7 +93,8 @@ export default function Support() {
             marginBottom: "50px",
           }}
         >
-      Yordam Kerakmi?        </h1>
+          Yordam Kerakmi?{" "}
+        </h1>
         <div style={{ marginBottom: "5%" }}>
           <button
             style={{
@@ -177,13 +184,16 @@ export default function Support() {
               <div
                 key={opt.title}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = "translateY(-8px) scale(1.03)";
-                  e.currentTarget.style.boxShadow = "0 20px 50px rgba(20,40,160,0.22)";
+                  e.currentTarget.style.transform =
+                    "translateY(-8px) scale(1.03)";
+                  e.currentTarget.style.boxShadow =
+                    "0 20px 50px rgba(20,40,160,0.22)";
                   e.currentTarget.style.borderColor = "rgba(20,40,160,0.45)";
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.transform = "translateY(0) scale(1)";
-                  e.currentTarget.style.boxShadow = "0 6px 20px rgba(0,0,0,0.06)";
+                  e.currentTarget.style.boxShadow =
+                    "0 6px 20px rgba(0,0,0,0.06)";
                   e.currentTarget.style.borderColor = "#ECECEC";
                 }}
                 style={{
@@ -271,7 +281,8 @@ export default function Support() {
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.transform = "scale(1.03)";
-                e.currentTarget.style.boxShadow = "0 14px 36px rgba(20,40,160,0.4)";
+                e.currentTarget.style.boxShadow =
+                  "0 14px 36px rgba(20,40,160,0.4)";
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.transform = "scale(1)";
@@ -351,8 +362,7 @@ export default function Support() {
           <div
             style={{
               display: "grid",
-              gridTemplateColumns:
-                "repeat(auto-fit, minmax(300px, 1fr))",
+              gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
               gap: "28px",
             }}
           >
@@ -367,15 +377,13 @@ export default function Support() {
                   e.currentTarget.style.borderColor = "rgba(20,40,160,0.5)";
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.transform =
-                    "translateY(0) scale(1)";
+                  e.currentTarget.style.transform = "translateY(0) scale(1)";
                   e.currentTarget.style.boxShadow =
                     "0 8px 24px rgba(0,0,0,0.07)";
                   e.currentTarget.style.borderColor = "#ECECEC";
                 }}
                 style={{
-                  background:
-                    "rgb(255, 255, 255)",
+                  background: "rgb(255, 255, 255)",
                   border: "1px solid #ECECEC",
                   borderRadius: "24px",
                   overflow: "hidden",
@@ -415,6 +423,7 @@ export default function Support() {
                     {cat.icon}
                   </div>
                   <Image
+                    loading="lazy"
                     src={cat.img}
                     alt={cat.title}
                     className="cat-img"

@@ -9,7 +9,7 @@ import {
   FaNoteSticky,
   FaWandMagicSparkles,
 } from "react-icons/fa6";
-import GalaxyAIvideo from "../../../Videos/GalaxyAIvideo.mp4"
+import GalaxyAIvideo from "../../../Videos/GalaxyAIvideo.mp4";
 export default function Galaxyai() {
   const featureCardStyle = {
     width: "270px",
@@ -66,7 +66,7 @@ export default function Galaxyai() {
     width: "480px",
     height: "360px",
     borderRadius: "30px",
-    textAlign: "center", 
+    textAlign: "center",
     padding: "40px",
     background: "rgba(255,255,255,.88)",
     backdropFilter: "blur(18px)",
@@ -195,10 +195,11 @@ export default function Galaxyai() {
           }}
         >
           <Image
+            loading="lazy"
             src={Galaxy1}
             alt="Galaxy AI"
             fill
-            priority
+            sizes="(max-width: 768px) 100vw, 1200px"
             style={{
               objectFit: "cover",
             }}
@@ -360,8 +361,8 @@ export default function Galaxyai() {
             animationDelay: "0.1s",
           }}
         >
-          Galaxy AI ning eng muhim aqlli funksiyalari bilan tanishing — ular
-          har kuni sizga vaqtni tejash va ijodkorlikni oshirishda yordam beradi.
+          Galaxy AI ning eng muhim aqlli funksiyalari bilan tanishing — ular har
+          kuni sizga vaqtni tejash va ijodkorlikni oshirishda yordam beradi.
         </p>
 
         <div
@@ -449,16 +450,16 @@ export default function Galaxyai() {
             animationDelay: "0.1s",
           }}
         >
-          Quyidagi video Galaxy AI ning aqlli tahrirlash imkoniyatlarini —
-          Photo Assist orqali rasmlaringizni qanday mukammallashtirishini
-          namoyish etadi.
+          Quyidagi video Galaxy AI ning aqlli tahrirlash imkoniyatlarini — Photo
+          Assist orqali rasmlaringizni qanday mukammallashtirishini namoyish
+          etadi.
         </p>
       </section>
 
       <section
         style={{
           position: "relative",
-          height: "100vh",
+          height: "fit-content",
           width: "100%",
           overflow: "hidden",
         }}

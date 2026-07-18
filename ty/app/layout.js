@@ -102,13 +102,13 @@ export default function RootLayout({ children }) {
                 className="btnhovercolor"
               >
                 <Link
-                  href="/"
+                    href="/components/AboutUs"
                   style={{
                     color: "inherit",
                     textDecoration: "none",
                   }}
                 >
-                  Haqimizda
+                  Biz Haqimizda
             </Link>
               </button>
 
@@ -146,7 +146,7 @@ export default function RootLayout({ children }) {
                     textDecoration: "none",
                   }}
                 >
-                  Sun'iy intellekt
+                  Galaxy AI 
                 </Link>
               </button>
               <button
@@ -158,7 +158,7 @@ export default function RootLayout({ children }) {
                 className="btnhovercolor"
               >
                 <Link
-                  href="/components/Ecosystem"
+                  href="/components/SmartHome"
                   style={{
                     color: "inherit",
                     textDecoration: "none",
