@@ -27,7 +27,7 @@ export default function SmartHome() {
           }}
         >
           <h1 style={{ fontSize: "50px" }}>
-            Samsung Ecosistemasi <br /> bilan Tanishing
+            Samsung SmartThings <br /> bilan Tanishing
           </h1>
           <p
             style={{
@@ -38,11 +38,11 @@ export default function SmartHome() {
               marginBottom: "50px",
             }}
           >
-            Samsung ekotizimi — bu telefon, soat va uy jihozlarining bir-biri
-            bilan avtomatik bogʻlanishidir. Ular fayllarni oson oʻtkazadi,
-            quloqchinni oʻzi ulaydi va maishiy texnikadan bildirishnomalar
-            yuboradi. Maqsad — hamma mayda-chuyda ishlarni texnikaning oʻzi
-            bajarishi va sizga qulay boʻlishidir.
+            Samsung SmartThings — bu uy jihozlaringizni bitta ilova orqali
+            boshqarish imkonini beruvchi aqlli uy platformasidir. U yorugʻlik,
+            termostat, xavfsizlik kameralari va boshqa qurilmalarni birlashtiradi,
+            ularni masofadan boshqarish va avtomatiklashtirishni taʼminlaydi.
+            Maqsad — uyingizni sizga qulay, xavfsiz va energiya tejamkor qilishdir.
           </p>
           <div style={{ marginTop: "10px", display: "flex" }}>
             <div
@@ -116,7 +116,7 @@ export default function SmartHome() {
                   e.currentTarget.style.transform = "translateY(0)";
                 }}
               >
-                Ecosystem Ko'rib chiqish →
+                SmartThings Ko'rib chiqish →
               </button>
             </div>
           </div>
@@ -199,7 +199,7 @@ export default function SmartHome() {
                   }}
                 >
                   SmartThings orqali belgilangan vaqtda belgilangan texnikalar
-                  ishlashni boshlaydi
+                  ishlashni boshlaydim   b                                                                                                        
                 </p>
               </div>
             </div>
@@ -218,7 +218,7 @@ export default function SmartHome() {
               }}
             >
               <Image
-                src={SmartThings2}
+                src={SmartThings1}
                 fill
                 style={{ objectFit: "cover" }}
                 alt="ff"

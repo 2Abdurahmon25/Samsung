@@ -150,8 +150,7 @@ export default function Watches() {
           loading="lazy"
           src={Watch_background}
           alt="Sa"
-          fill
-          priority
+          fill="true"
           sizes="(max-width: 768px) 100vw, 1200px"
           style={{
             objectFit: "cover",

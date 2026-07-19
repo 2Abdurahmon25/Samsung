@@ -69,7 +69,7 @@ export default function RootLayout({ children }) {
             <div
               style={{
                 display: "flex",
-                gap: "31px",
+                gap: "23px",
                 alignItems: "center",
                 justifyContent: "center",
                 flexWrap: "wrap",
@@ -243,8 +243,8 @@ export default function RootLayout({ children }) {
                   Smart Watch
                 </Link>
               </button>
-
-              <button
+ 
+                <button
                 style={{
                   borderRadius: "100px",
                   width: "fit-content",
@@ -253,32 +253,13 @@ export default function RootLayout({ children }) {
                 className="btnhovercolor"
               >
                 <Link
-                  href="/components/Television"
+                  href="/components/TVmonitor"
                   style={{
                     color: "inherit",
                     textDecoration: "none",
                   }}
                 >
-                  Televizor
-                </Link>
-              </button>
-
-              <button
-                style={{
-                  borderRadius: "100px",
-                  width: "fit-content",
-                  padding: "8px",
-                }}
-                className="btnhovercolor"
-              >
-                <Link
-                  href="/components/Monitor"
-                  style={{
-                    color: "inherit",
-                    textDecoration: "none",
-                  }}
-                >
-                  Monitor
+                  Televizor & Monitor
                 </Link>
               </button>
 
