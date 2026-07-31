@@ -9,7 +9,7 @@ import {
   FaNoteSticky,
   FaWandMagicSparkles,
 } from "react-icons/fa6";
-import GalaxyAIvideo from "../../../Videos/GalaxyAIvideo.mp4";
+import GalaxyAIvideo from "../../../Galaxyaivideo/GalaxyAIvideo.mp4";
 export default function Galaxyai() {
   const featureCardStyle = {
     width: "270px",
