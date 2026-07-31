@@ -9,7 +9,6 @@ import {
   FaNoteSticky,
   FaWandMagicSparkles,
 } from "react-icons/fa6";
-import GalaxyAIvideo from "../../../Videos/GalaxyAIvideo.mp4";
 export default function Galaxyai() {
   const featureCardStyle = {
     width: "270px",
@@ -94,7 +93,7 @@ export default function Galaxyai() {
       style={{
         position: "relative",
         overflow: "hidden",
-        Height: "100vh",
+        minHeight: "100vh",
       }}
     >
       <div
@@ -474,7 +473,7 @@ export default function Galaxyai() {
             display: "block",
           }}
         >
-          <source src={GalaxyAIvideo} type="video/mp4" />
+          <source src="/Videos/GalaxyAIvideo.mp4" type="video/mp4" />
         </video>
       </section>
     </div>

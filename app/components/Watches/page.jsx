@@ -150,7 +150,7 @@ export default function Watches() {
           loading="lazy"
           src={Watch_background}
           alt="Sa"
-          fill="true"
+          fill
           sizes="(max-width: 768px) 100vw, 1200px"
           style={{
             objectFit: "cover",
@@ -909,8 +909,8 @@ export default function Watches() {
                   loading="lazy"
                   src={Watch7}
                   alt="Galaxy Watch 7"
-                  fizes="260px"
-                  sill
+                  fill
+                  sizes="260px"
                   style={{
                     objectFit: "contain",
                     padding: "10px",
@@ -1049,8 +1049,8 @@ export default function Watches() {
                   loading="lazy"
                   src={s.image}
                   alt="gej"
-                  fizes="210px"
-                  sill
+                  fill
+                  sizes="210px"
                   style={{ objectFit: "contain" }}
                 />
               </div>
@@ -1245,8 +1245,8 @@ export default function Watches() {
                       loading="lazy"
                       src={r.image}
                       alt='p'
-                      fizes="(max-width: 768px) 100vw, 400px"
-                      sill
+                      fill
+                      sizes="(max-width: 768px) 100vw, 400px"
                       style={{ objectFit: "contain", padding: "14px" }}
                     />
                   </div>

@@ -454,31 +454,30 @@ export default function AboutUs() {
       </section>
 
       <section
-        style={{
-          height: "70vh",
-          texAlign: "center",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
+       style={{
+         height: "70vh",
+         textAlign: "center",
+         display: "flex",
+         justifyContent: "center",
+         alignItems: "center",
+       }}
       >
-        <h1
-          style={{
-            fontWeight: "900",
-            fontSize: "70px",
-            paddingLeft: "50px",
-            color: "black",
-            paddingTop: "100px",
-            position: "relative",
-            display: "block",
-          }}
-        >
-          Samsung'ni tarixidan eng mashhur
-          <br />
-          <span style={{ position: "relative", marginLeft: "3F00px" }}>
-            texnologiyalari
-          </span>
-        </h1>
+       <h1
+         style={{
+           fontWeight: "900",
+           fontSize: "70px",
+           paddingLeft: "50px",
+           color: "black",
+           paddingTop: "100px",
+           position: "relative",
+           display: "block",
+         }}
+       >
+         Samsung'ni tarixidan eng mashhur
+         <br />
+         <span style={{ position: "relative", marginLeft: "20px" }}>
+           texnologiyalari
+         </span>        </h1>
       </section>
 
       <section style={{ padding: "clamp(64px,9vw,120px) 24px" }}>
