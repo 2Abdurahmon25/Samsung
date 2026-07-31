@@ -40,3 +40,6 @@ Get-Images "Samsung Galaxy Buds" "buds" 2
 Get-Images "Samsung Galaxy Tab" "tab" 2
 Get-Images "Samsung Galaxy Book" "book" 2
 Write-Host "DONE"
+
+ 
+ 

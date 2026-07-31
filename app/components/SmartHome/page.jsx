@@ -517,3 +517,6 @@ export default function SmartThingsPage() {
     </div>
   );
 }
+
+ 
+ 

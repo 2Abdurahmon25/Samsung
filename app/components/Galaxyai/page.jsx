@@ -479,3 +479,6 @@ export default function Galaxyai() {
     </div>
   );
 }
+
+ 
+ 

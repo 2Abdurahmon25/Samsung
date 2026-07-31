@@ -38,3 +38,6 @@ Get-Images "Samsung QLED television" "tv" 4
 Get-Images "Samsung Odyssey monitor" "monitor" 4
 Get-Images "Samsung curved monitor" "monitor" 4
 Write-Host "DONE"
+
+ 
+ 

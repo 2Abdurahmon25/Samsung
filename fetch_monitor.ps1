@@ -38,3 +38,6 @@ function Get-Images($query, $prefix, $count) {
 Get-Images "Samsung Odyssey monitor" "monitor" 4
 Get-Images "computer monitor display" "monitor" 4
 Write-Host "DONE"
+
+ 
+ 
