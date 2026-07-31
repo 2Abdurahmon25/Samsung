@@ -1,0 +1,6 @@
+# Netlify configuration
+# The Next.js app lives in the ty/ subfolder, so the base points there.
+[build]
+  base = "ty"
+  command = "npm run build"
+  publish = ".next"
