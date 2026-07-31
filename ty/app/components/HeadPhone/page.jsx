@@ -777,19 +777,6 @@ export default function HeadPhone() {
             }}
           >
             <div>
-              <span
-                style={{
-                  display: "inline-block",
-                  fontSize: "13px",
-                  fontWeight: 700,
-                  letterSpacing: "3px",
-                  textTransform: "uppercase",
-                  color: "#4A8BFF",
-                  marginBottom: "14px",
-                }}
-              >
-                Faol shovqinni bekor qilish
-              </span>
               <h2
                 style={{
                   fontSize: "clamp(28px, 4vw, 48px)",
@@ -799,9 +786,7 @@ export default function HeadPhone() {
                   letterSpacing: "-0.5px",
                 }}
               >
-                Shovqin {">"} Tinchlik.
-                <br />
-                <span style={{ color: "#4A8BFF" }}>Bir zumda.</span>
+                Shovqinni yopish qobiliyati
               </h2>
               <p
                 style={{
@@ -1733,3 +1718,6 @@ export default function HeadPhone() {
     </div>
   );
 }
+
+ 
+ 

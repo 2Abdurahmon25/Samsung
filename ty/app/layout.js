@@ -69,7 +69,7 @@ export default function RootLayout({ children }) {
             <div
               style={{
                 display: "flex",
-                gap: "31px",
+                gap: "23px",
                 alignItems: "center",
                 justifyContent: "center",
                 flexWrap: "wrap",
@@ -177,6 +177,25 @@ export default function RootLayout({ children }) {
                 className="btnhovercolor"
               >
                 <Link
+                  href="/components/MaishiyTexnika"
+                  style={{
+                    color: "inherit",
+                    textDecoration: "none",
+                  }}
+                >
+                  Maishiy Texnika
+                </Link>
+              </button>
+
+              <button
+                style={{
+                  borderRadius: "100px",
+                  width: "fit-content",
+                  padding: "8px",
+                }}
+                className="btnhovercolor"
+              >
+                <Link
                   href="/components/HeadPhone"
                   style={{
                     color: "inherit",
@@ -206,24 +225,7 @@ export default function RootLayout({ children }) {
                 </Link>
               </button>
 
-              <button
-                style={{
-                  borderRadius: "100px",
-                  width: "fit-content",
-                  padding: "8px",
-                }}
-                className="btnhovercolor"
-              >
-                <Link
-                  href="/components/SmartHome"
-                  style={{
-                    color: "inherit",
-                    textDecoration: "none",
-                  }}
-                >
-                  Maishiy texnika
-                </Link>
-              </button>
+          
 
               <button
                 style={{
@@ -243,8 +245,8 @@ export default function RootLayout({ children }) {
                   Smart Watch
                 </Link>
               </button>
-
-              <button
+ 
+                <button
                 style={{
                   borderRadius: "100px",
                   width: "fit-content",
@@ -253,32 +255,13 @@ export default function RootLayout({ children }) {
                 className="btnhovercolor"
               >
                 <Link
-                  href="/components/Television"
+                  href="/components/TVmonitor"
                   style={{
                     color: "inherit",
                     textDecoration: "none",
                   }}
                 >
-                  Televizor
-                </Link>
-              </button>
-
-              <button
-                style={{
-                  borderRadius: "100px",
-                  width: "fit-content",
-                  padding: "8px",
-                }}
-                className="btnhovercolor"
-              >
-                <Link
-                  href="/components/Monitor"
-                  style={{
-                    color: "inherit",
-                    textDecoration: "none",
-                  }}
-                >
-                  Monitor
+                  Televizor & Monitor
                 </Link>
               </button>
 
@@ -341,8 +324,7 @@ export default function RootLayout({ children }) {
                 </h4>
                 <div style={{ display: "flex", flexDirection: "column", gap: "10px", fontSize: "14px" }}>
                   <Link href="/components/S26" style={footerLink}>Telefonlar</Link>
-                  <Link href="/components/Television" style={footerLink}>Televizorlar</Link>
-                  <Link href="/components/Monitor" style={footerLink}>Monitorlar</Link>
+                  <Link href="/components/TVmonitor" style={footerLink}>Televizor & Monitor</Link>
                   <Link href="/components/SmartHome" style={footerLink}>Maishiy texnika</Link>
                 </div>
               </div>
@@ -354,7 +336,7 @@ export default function RootLayout({ children }) {
                 <div style={{ display: "flex", flexDirection: "column", gap: "10px", fontSize: "14px" }}>
                   <Link href="/components/Support" style={footerLink}>Yordam</Link>
                   <Link href="/components/Galaxyai" style={footerLink}>Sun'iy intellekt</Link>
-                  <Link href="/components/Ecosystem" style={footerLink}>SmartThings</Link>
+                  <Link href="/components/SmartHome" style={footerLink}>SmartThings</Link>
                   <Link href="/components/Watches" style={footerLink}>Smart Watch</Link>
                 </div>
               </div>
@@ -398,3 +380,6 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
+ 
+ 

@@ -8,6 +8,19 @@ const nextConfig = {
   experimental: {
     optimizePackageImports: ["react-icons"],
   },
+  // Added image configuration to allow Samsung's official domains
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.samsung.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.samsung.com',
+      },
+    ],
+  },
   turbopack: {
     root: __dirname,
     rules: {
@@ -20,3 +33,5 @@ const nextConfig = {
 };
 
 export default nextConfig;
+ 
+ 

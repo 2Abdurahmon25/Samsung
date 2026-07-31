@@ -1111,8 +1111,9 @@ export default function page() {
 
       <section
         style={{
+          padding: "96px 24px",
           background: "#050505",
-          height: "130dvh",
+          height: "120dvh",
         }}
       >
         <div style={{ maxWidth: "1280px", margin: "0 auto", width: "100%" }}>
@@ -1317,3 +1318,6 @@ export default function page() {
     </div>
   );
 }
+
+ 
+ 
