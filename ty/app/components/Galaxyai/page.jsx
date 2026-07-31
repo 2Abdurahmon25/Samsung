@@ -455,7 +455,6 @@ export default function Galaxyai() {
           etadi.
         </p>
       </section>
-
       <section
         style={{
           position: "relative",
@@ -474,12 +473,9 @@ export default function Galaxyai() {
             display: "block",
           }}
         >
-          <source src={GalaxyAIvideo} type="video/mp4" />
+          <source src="/Videos/GalaxyAIvideo.mp4" type="video/mp4" />
         </video>
       </section>
     </div>
   );
 }
-
- 
- 

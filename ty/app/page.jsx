@@ -41,22 +41,22 @@ export default function page() {
     {
       title: "Telefonlar va Aksessuarlar",
       img: Mobile,
-      route: "./components/Watches",
+      route: "/components/S26",
     },
     {
       title: "Televizorlar va Monitorlar",
       img: Monitor,
-      route: "./components/Monitor",
+      route: "/components/TVmonitor",
     },
     {
       title: "Maishiy Texnika",
       img: Maish,
-      route: "./components/SmartHome",
+      route: "/components/MaishiyTexnika",
     },
     {
       title: "Kompyuter Qurilmalari",
       img: Hardware,
-      route: "./components/Watches",
+      route: "/components/TVmonitor",
     },
   ];
 
@@ -65,25 +65,25 @@ export default function page() {
       name: "Galaxy S26 Ultra",
       price: "$1,299",
       img: S26,
-      route: "./components/S26",
+      route: "/components/S26",
     },
     {
       name: "Galaxy Watch 8",
       price: "$449",
       img: Watch,
-      route: "./components/Watches",
+      route: "/components/Watches",
     },
     {
       name: "Odyssey G6",
       price: "$1000",
       img: Monitorodeyssey,
-      route: "./components/Monitor",
+      route: "/components/TVmonitor",
     },
     {
       name: "Galaxy Buds Pro 4",
       price: "$199",
       img: Samsungbuds,
-      route: "./components/Watches",
+      route: "/components/HeadPhone",
     },
   ];
 
@@ -1318,6 +1318,3 @@ export default function page() {
     </div>
   );
 }
-
- 
- 

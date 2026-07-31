@@ -8,7 +8,6 @@ import Watch8 from "../../../images/Watch8.png";
 import Watch7 from "../../../images/Watch7.png";
 import { FaLightbulb, FaHeartPulse, FaMicrochip } from "react-icons/fa6";
 import { BsStars } from "react-icons/bs";
-import { FaBatteryFull } from "react-icons/fa";
 import Link from "next/link";
 import { IoShieldCheckmark, IoLocationSharp, IoSparkles } from "react-icons/io5";
 import { FaHeartbeat } from "react-icons/fa";
@@ -88,7 +87,7 @@ export default function Watches() {
       name: "Diyorbek",
       model: "Galaxy Watch Ultra",
       image: WatchUltra,
-      l:"D",
+      l: "D",
       badge: { icon: FaLightbulb, label: "3000 Nit Ekran", color: "#f3b55a" },
       text: "Ishim to'g'ridan-to'g'ri quyosh ostida. Ultra'nig 3000 nit ekrani tufayli endi soyani qidirib yurmayman — xabarnomalarni yorug'likda ham o'qiyaman.",
     },
@@ -96,7 +95,7 @@ export default function Watches() {
       name: "Nigora",
       model: "Galaxy Watch 8",
       image: Watch8,
-      l:"N",
+      l: "N",
       badge: { icon: MdBloodtype, label: "Qon Bosimi", color: "#ff7043" },
       text: "Shifokorim qon bosimimni tez-tez tekshirishni maslahat bergan edi. Endi hafta davomida tendentsiyalarni kuzatib, qabulga hisobot bilan boraman. Klinikaga borishim 3 martadan 1 taga tushdi.",
     },
@@ -104,7 +103,7 @@ export default function Watches() {
       name: "Jasur",
       model: "Galaxy Watch 8 Classic",
       image: Watch8classic,
-      l:"J",
+      l: "J",
       badge: { icon: FaMicrochip, label: "Aylanuvchi Bezel", color: "#d4d4d4" },
       text: "Velosipedda aylanuvchi bezeldan doim foydalanaman — qo'lqop bilan ekranni silarishdan ko'ra boshqarish ancha oson. Musiqa va navigatsiyani to'xtamasdan almashtirdim.",
     },
@@ -112,7 +111,7 @@ export default function Watches() {
       name: "Malika",
       model: "Galaxy Watch 7",
       image: Watch7,
-      l:"M",
+      l: "M",
       badge: { icon: FaMoon, label: "Uyqu Tahlili", color: "#8b5cf6" },
       text: "Har kuni ertalab uyqu ballimga e'tibor beraman. Uxlash vaqtimni o'zgartirgach, endi ancha dam bilan uyg'onaman. Ertalabki charchoq 70% ga kamaydi.",
     },
@@ -120,7 +119,7 @@ export default function Watches() {
       name: "Sardor",
       model: "Galaxy Watch Ultra",
       image: WatchUltra,
-      l:"S",
+      l: "S",
       badge: { icon: IoLocationSharp, label: "Dual GPS", color: "#34d399" },
       text: "Deyarli har dam olish kuni tog'ga chiqaman. Dual-frequency GPS bir necha marta noto'g'ri yo'lga tushib qolishimdan saqladi. 30 km lik marshrutda faqat 1 marta chetdalashdim.",
     },
@@ -149,8 +148,8 @@ export default function Watches() {
         <Image
           loading="lazy"
           src={Watch_background}
-          alt="Sa"
-          fill="true"
+          alt="Samsung Watches Background"
+          fill
           sizes="(max-width: 768px) 100vw, 1200px"
           style={{
             objectFit: "cover",
@@ -217,6 +216,7 @@ export default function Watches() {
             marginTop: "5px",
           }}
         >
+          {/* Card 1: Galaxy Watch Ultra */}
           <div
             style={{
               width: "810px",
@@ -235,7 +235,7 @@ export default function Watches() {
               e.currentTarget.style.boxShadow =
                 "0 30px 80px rgba(59, 130, 246, 0.3)";
               e.currentTarget.style.background =
-                "background: linear-gradient(135deg, #2222b4 25%, #2f6bf7 75%)";
+                "linear-gradient(135deg, #2222b4 25%, #2f6bf7 75%)";
               e.currentTarget.style.border = "4px solid #ffffff";
             }}
             onMouseLeave={(e) => {
@@ -391,6 +391,7 @@ export default function Watches() {
             </div>
           </div>
 
+          {/* Card 2: Galaxy Watch 8 Classic */}
           <div
             style={{
               width: "810px",
@@ -409,7 +410,7 @@ export default function Watches() {
               e.currentTarget.style.boxShadow =
                 "0 30px 80px rgba(59, 130, 246, 0.3)";
               e.currentTarget.style.background =
-                "background: linear-gradient(135deg, #2222b4 25%, #2f6bf7 75%)";
+                "linear-gradient(135deg, #2222b4 25%, #2f6bf7 75%)";
               e.currentTarget.style.border = "4px solid #ffffff";
             }}
             onMouseLeave={(e) => {
@@ -561,7 +562,6 @@ export default function Watches() {
                     padding: "10px",
                     borderRadius: "30%",
                     filter: "drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3))",
-                    background: "#666666",
                     background: "linear-gradient(315deg, #666666, #898989)",
                   }}
                 />
@@ -569,6 +569,7 @@ export default function Watches() {
             </div>
           </div>
 
+          {/* Card 3: Galaxy Watch 8 */}
           <div
             style={{
               width: "810px",
@@ -588,7 +589,7 @@ export default function Watches() {
               e.currentTarget.style.boxShadow =
                 "0 30px 80px rgba(59, 130, 246, 0.3)";
               e.currentTarget.style.background =
-                "background: linear-gradient(135deg, #2222b4 25%, #2f6bf7 75%)";
+                "linear-gradient(135deg, #2222b4 25%, #2f6bf7 75%)";
               e.currentTarget.style.border = "4px solid #ffffff";
             }}
             onMouseLeave={(e) => {
@@ -739,7 +740,6 @@ export default function Watches() {
                     padding: "10px",
                     borderRadius: "30%",
                     filter: "drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3))",
-                    background: "#666666",
                     background: "linear-gradient(315deg, #666666, #898989)",
                   }}
                 />
@@ -747,6 +747,7 @@ export default function Watches() {
             </div>
           </div>
 
+          {/* Card 4: Galaxy Watch 7 */}
           <div
             style={{
               width: "810px",
@@ -766,7 +767,7 @@ export default function Watches() {
               e.currentTarget.style.boxShadow =
                 "0 30px 80px rgba(59, 130, 246, 0.3)";
               e.currentTarget.style.background =
-                "background: linear-gradient(135deg, #2222b4 25%, #2f6bf7 75%)";
+                "linear-gradient(135deg, #2222b4 25%, #2f6bf7 75%)";
               e.currentTarget.style.border = "4px solid #ffffff";
             }}
             onMouseLeave={(e) => {
@@ -853,25 +854,9 @@ export default function Watches() {
                     lineHeight: 1.4,
                   }}
                 >
-                  <FaBatteryFull style={{ flexShrink: 0 }} />
+                  <FaHeartPulse style={{ flexShrink: 0 }} />
                   <span>
-                    Standart 20 mm quloq tizimi bilan bog‘lash osonroq
-                  </span>
-                </div>
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "10px",
-                    fontSize: "1.05rem",
-                    color: "#7eea1b",
-                    fontWeight: 700,
-                    lineHeight: 1.4,
-                  }}
-                >
-                  <FaMicrochip style={{ flexShrink: 0 }} />
-                  <span>
-                    Exynos W1000 chipi bilan ishonchli va barqaror ishlash
+                    Ilg'or sensorlar va har kungi salomatlik kuzatuvi
                   </span>
                 </div>
                 <button
@@ -888,7 +873,7 @@ export default function Watches() {
                     cursor: "pointer",
                   }}
                 >
-                  <Link href="https://www.samsung.com/us/watches/galaxy-watch-ultra/">
+                  <Link href="https://www.samsung.com/us/watches/galaxy-watch7/">
                     Batafsil
                   </Link>
                 </button>
@@ -909,15 +894,14 @@ export default function Watches() {
                   loading="lazy"
                   src={Watch7}
                   alt="Galaxy Watch 7"
-                  fizes="260px"
-                  sill
+                  fill
+                  sizes="260px"
                   style={{
                     objectFit: "contain",
                     padding: "10px",
-                    filter: "drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3))",
                     borderRadius: "30%",
-                    background: "#56E038",
-                    background: "linear-gradient(315deg, #56E038, #74E807)",
+                    filter: "drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3))",
+                    background: "linear-gradient(315deg, #519013, #7eea1b)",
                   }}
                 />
               </div>
@@ -925,340 +909,6 @@ export default function Watches() {
           </div>
         </div>
       </section>
-
-      <section style={{ height: "100vh" }}>
-        <h1
-          style={{
-            fontSize: "50px",
-            color: "black",
-            textAlign: "center",
-            marginTop: "5px",
-          }}
-        >
-          Sog'lig'ingiz va Kundalik faoliyatingiz <br /> uchun yaratilgan
-          xususiyatlar
-        </h1>
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(3, minmax(0, 1fr))",
-            gap: "13px",
-            padding: "20px 32px",
-          }}
-        >
-          {xususiyat.map((s, index) => (
-            <div
-              key={index}
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "space-between",
-                minHeight: "320px",
-                padding: "22px",
-                borderRadius: "24px",
-                background: "rgba(15, 23, 42, 0.96)",
-                border: "1px solid rgba(148, 163, 184, 0.16)",
-                boxShadow: "0 20px 60px rgba(15, 23, 42, 0.2)",
-              }}
-            >
-              <div
-                style={{ display: "flex", alignItems: "center", gap: "10px" }}
-              >
-                <div
-                  style={{
-                    width: "52px",
-                    height: "52px",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    borderRadius: "50%",
-                    background: "rgba(255, 255, 255, 0.08)",
-                    color:
-                      s.reactIcon === FaHeartbeat
-                        ? "#ff5a52"
-                        : s.reactIcon === MdBloodtype
-                          ? "#ff7043"
-                          : s.reactIcon === FaMoon
-                            ? "#8b5cf6"
-                            : s.reactIcon === MdDirectionsRun
-                              ? "#34d399"
-                              : s.reactIcon === FaUser
-                                ? "#f59e0b"
-                                : s.reactIcon === IoWater
-                                  ? "#df2707"
-                                  : "#cbd5e1",
-                    fontSize: "2.3rem",
-                  }}
-                >
-                  <s.reactIcon />
-                </div>
-                <h1
-                  style={{
-                    color: "white",
-                    paddingLeft:"18 px",
-                    fontSize: "40px",
-                    fontWeight: "900",
-                  }}
-                >
-                  {s.h1}
-                </h1>
-                <div
-                  style={{
-                    position: "absolute",
-                    paddingTop: "250px",
-                    overflow: "hidden",
-                  }}
-                >
-                  <p
-                    style={{
-                      fontSize: "1.25rem",
-                      color: "#ffffff",
-                    }}
-                  >
-                    {s.desc}
-                  </p>
-                  <p
-                    style={{
-                      fontSize: "1.25rem",
-                      color: "#ffffff",
-                    }}
-                  >
-                    {s.desc2}
-                  </p>
-                  <p
-                    style={{
-                      fontSize: "1.25rem",
-                      color: "#ffffff",
-                    }}
-                  >
-                    {s.desc3}
-                  </p>
-                </div>
-              </div>
-
-              <div
-                style={{
-                  position: "relative",
-                  width: "190px",
-                  height: "210px",
-                  borderRadius: "118px",
-                  left: "300px",
-                }}
-              >
-                <Image
-                  loading="lazy"
-                  src={s.image}
-                  alt="gej"
-                  fizes="210px"
-                  sill
-                  style={{ objectFit: "contain" }}
-                />
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section
-        style={{
-          background: "#1B2338",
-          padding: "96px 1px",
-          marginTop: "40px",
-          
-        }}
-      >
-        <div style={{ maxWidth: "1640px", margin: "0 auto" }}>
-          <h2
-            style={{
-              textAlign: "center",
-              color: "#ffffff",
-              fontSize: "clamp(2rem, 4vw, 3.2rem)",
-              fontWeight: 700,
-              letterSpacing: "-0.5px",
-              margin: 0,
-            }}
-          >
-            Mijozlarimiz Nimalar Deyishmoqda?
-          </h2>
-
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(3, minmax(0, 1fr))",
-              gap: "24px",
-              marginTop: "56px",
-            }}
-          >
-            {reviews.map((r, index) => (
-              <div
-                key={index}
-                style={{
-                  background: "#1B2338",
-                  borderRadius: "22px",
-                  padding: "28px",
-                  minHeight: "420px",
-                  border: "1px solid rgba(148, 163, 184, 0.18)",
-                  boxShadow:
-                    "0 18px 50px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(59, 130, 246, 0.06), 0 0 40px rgba(59, 130, 246, 0.12)",
-                  display: "flex",
-                  gap: "20px",
-                  transition: "transform 0.3s ease, box-shadow 0.3s ease",
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = "translateY(-6px)";
-                  e.currentTarget.style.boxShadow =
-                    "0 28px 70px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(59, 130, 246, 0.12), 0 0 60px rgba(59, 130, 246, 0.22)";
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = "translateY(0)";
-                  e.currentTarget.style.boxShadow =
-                    "0 18px 50px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(59, 130, 246, 0.06), 0 0 40px rgba(59, 130, 246, 0.12)";
-                }}
-              >
-                <div
-                  style={{
-                    flex: "0 0 65%",
-                    display: "flex",
-                    flexDirection: "column",
-                  }}
-                >
-                  <div
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "12px",
-                    }}
-                  >
-                    <div
-                      style={{
-                        width: "54px",
-                        height: "54px",
-                        borderRadius: "50%",
-                        background: avatarGrads[index % avatarGrads.length],
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        color: "#fff",
-                        fontWeight: 700,
-                        fontSize: "1.2rem",
-                        flexShrink: 0,
-                      }}
-                    >
-                      {r.l}
-                    </div>
-                    <div style={{ display: "flex", flexDirection: "column" }}>
-                      <div
-                        style={{
-                          display: "flex",
-                          alignItems: "center",
-                          gap: "6px",
-                        }}
-                      >
-                        <span
-                          style={{
-                            color: "#ffffff",
-                            fontWeight: 600,
-                            fontSize: "1.05rem",
-                          }}
-                        >
-                          {r.name}
-                        </span>
-                        <IoShieldCheckmark
-                          style={{ color: "#3DDC84", fontSize: "1rem" }}
-                        />
-                      </div>
-                      <span
-                        style={{
-                          color: "#D4D7E1",
-                          fontSize: "0.8rem",
-                          fontWeight: 400,
-                        }}
-                      >
-                        Tasdiqlangan xaridor
-                      </span>
-                    </div>
-                  </div>
-
-                  <div
-                    style={{
-                      display: "flex",
-                      gap: "4px",
-                      marginTop: "16px",
-                      color: "#FFC83D",
-                      fontSize: "1.1rem",
-                    }}
-                  >
-                      <span>★★★★★</span>
-                  </div>
-
-                  <p
-                    style={{
-                      color: "#D4D7E1",
-                      fontSize: "0.95rem",
-                      lineHeight: 1.6,
-                      fontWeight: 400,
-                      marginTop: "16px",
-                      width:'250px'
-                    }}
-                  >
-                    {r.text}
-                  </p>
-
-                  
-                </div>
-
-                <div
-                  style={{
-                    flex: "0 0 35%",
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                  }}
-                >
-                  <span
-                    style={{
-                      color: "#ffffff",
-                      fontWeight: 600,
-                      fontSize: "0.95rem",
-                      textAlign: "center",
-                    }}
-                  >
-                    {r.model}
-                  </span>
-                  <div
-                    style={{
-                      marginTop: "14px",
-                      width: "135%",
-                      flex: 1,
-                      borderRadius: "18px",
-                      background:
-                        "linear-gradient(160deg, rgba(59,130,246,0.18) 0%, rgba(148,163,184,0.08) 100%)",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      position: "relative",
-                      overflow: "hidden",
-                      marginRight:'50px'
-                    }}
-                  >
-                    <Image
-                      loading="lazy"
-                      src={r.image}
-                      alt='p'
-                      fizes="(max-width: 768px) 100vw, 400px"
-                      sill
-                      style={{ objectFit: "contain", padding: "14px" }}
-                    />
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
     </div>
   );
 }
- 
- 

@@ -456,7 +456,7 @@ export default function AboutUs() {
       <section
         style={{
           height: "70vh",
-          texAlign: "center",
+          textAlign: "center",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
@@ -475,7 +475,7 @@ export default function AboutUs() {
         >
           Samsung'ni tarixidan eng mashhur
           <br />
-          <span style={{ position: "relative", marginLeft: "3F00px" }}>
+          <span style={{ position: "relative", marginLeft: "20px" }}>
             texnologiyalari
           </span>
         </h1>
@@ -816,6 +816,3 @@ export default function AboutUs() {
     </div>
   );
 }
-
- 
- 
